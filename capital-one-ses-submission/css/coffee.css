@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body{background-image: url("http://www.cafeaulaitoly.com/wp-content/uploads/2015/02/coffee.jpg");
+     background-size: 1300px 750px;
+     color: #FFFFFF}
+
+#header{color:#FFFFFF;
+        font-family: "Raleway";
+        font-size: 50px;
+        padding: 10% 10% 5% 10%;}
+
+/*navbar*/
+#navbar{font-size: 30px;
+        font-family: "Poppins";
+        height: 55px;
+        padding-top: 1%;
+        padding-bottom: 5%}
+
+/*search bar*/
+#search{margin: 0 25%;
+        height: 40px;
+        padding-bottom: 5%;}
+#input{height:60px;
+       opacity: 0.5;
+       font-family: "Poppins";
+       font-size: 20px;}
+#button{height:60px;
+        opacity: 0.8;
+        font-family: "Poppins"}
+
+/*description*/
+#description{font-family: "Poppins";
+             color: #FFFFFF;
+             padding: 0% 5% 5% 15%;
+             font-size: 15px;
+             width: 90%;}

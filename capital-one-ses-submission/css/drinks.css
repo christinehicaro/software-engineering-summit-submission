@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body{background-image: url("https://format-com-cld-res.cloudinary.com/image/private/s--zxw0yi5B--/c_limit,g_center,h_1200,w_65535/a_auto,fl_keep_iptc.progressive,q_95/20150519_Jameson_Bitters_cocktail_w64bc8.jpg");
+     background-size: 1280px 850px;
+     color: #FFFFFF}
+
+#header{color:#FFFFFF;
+        font-family: "Raleway";
+        font-size: 50px;
+        padding: 10% 10% 5% 10%;}
+
+/*navbar*/
+#navbar{font-size: 30px;
+        font-family: "Poppins";
+        height: 55px;
+        padding-top: 1%;
+        padding-bottom: 5%}
+
+/*search bar*/
+#search{margin: 0 25%;
+        height: 40px;
+        padding-bottom: 5%;}
+#input{height:60px;
+       opacity: 0.5;
+       font-family: "Poppins";
+       font-size: 20px;}
+#button{height:60px;
+        opacity: 0.8;
+        font-family: "Poppins"}
+
+/*description*/
+#description{font-family: "Poppins";
+             color: #FFFFFF;
+             padding: 0% 5% 5% 15%;
+             font-size: 15px;
+             width: 90%;}
