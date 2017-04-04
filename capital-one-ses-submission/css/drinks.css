@@ -18,7 +18,7 @@ body{background-image: url("https://format-com-cld-res.cloudinary.com/image/priv
         padding-bottom: 5%}
 
 /*search bar*/
-#search{margin: 0 25%;
+#searchBar{margin: 0 25%;
         height: 40px;
         padding-bottom: 5%;}
 #input{height:60px;

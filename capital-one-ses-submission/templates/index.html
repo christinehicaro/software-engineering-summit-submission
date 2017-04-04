@@ -42,22 +42,24 @@
     <!-- WEBSITE TITLE -->
     <center><h1 id = "header">BUSINESS FINDER</h1></center>
 
-    <div class="row">
-      <div class="col-lg-6" id = "search">
-        <div class="input-group">
-          <input type="text" class="form-control" name = "search" placeholder="SEARCH LOCATION" id = "input">
-          <span class="input-group-btn">
-            <a href = "/result"><button class="btn btn-default" type="button" id = "button">ENTER</button></a>
-          </span>
-        </div><!-- /input-group -->
-      </div><!-- /.col-lg-6 -->
-    </div><!-- /.row -->
+    <form action="/result" method="get">
+      <div class="row">
+        <div class="col-lg-6" id = "searchBar">
+          <div class="input-group">
+              <input type="text" name = "searchInput" class="form-control" placeholder="Search Location i.e. Chicago, IL" id = "input">
+              <center><a href = "/result"><input type="submit" value="ENTER" placeholder = "ENTER" id = "button"></a></center>
+          </div><!-- /input-group -->
+        </div><!-- /.col-lg-6 -->
+      </div><!-- /.row -->
+    </form>
 
     <div id = "description">
       <center><h3>
-        <p>SEARCH A LOCATION TO FIND TOP 5 BUSINESSES</p>
+        <p>SEARCH A LOCATION</p>
         <p>-OR-</p>
-        <p>CHOOSE FROM CATEGORIES IN NAV BAR</p>
+        <p>CHOOSE FROM PRE-MADE EXAMPLES IN NAV BAR USING CURRENT LOCATION</p>
+        <br>
+        <p> Want a response on the go? Send a tweet to @ses_chatbot on <a href = "http://twitter.com" target="_blank">Twitter</a>. </p>
       </h3></center>
     </div>
 
