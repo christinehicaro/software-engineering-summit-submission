@@ -80,7 +80,10 @@ def get_api_contents(search_term, latitude, longitude):
     response = urllib2.urlopen(urllib2.Request(yelp_url, headers={'Authorization': auth, 'Accept': 'application.json'}))
     businesses_data = json.load(response)
     place = businesses_data['businesses'][0]['name']
-    return place
+    template_vars = {
+        'name': place
+    }
+    return template_vars
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
@@ -97,28 +100,31 @@ class CoffeeHandler(webapp2.RequestHandler):
     def get(self):
         current_lat = get_current_latitude()
         current_lng = get_current_longitude()
-        place = get_api_contents('coffee', current_lat, current_lng)
-        logging.info(place)
+        # place = get_api_contents('coffee', current_lat, current_lng)
+        # logging.info(place)
         template = jinja_environment.get_template('templates/coffee.html')
-        self.response.write(template.render())
+        template_vars = get_api_contents('coffee', current_lat, current_lng)
+        self.response.write(template.render(template_vars))
 
 class DonutsHandler(webapp2.RequestHandler):
     def get(self):
         current_lat = get_current_latitude()
         current_lng = get_current_longitude()
-        place = get_api_contents('donuts', current_lat, current_lng)
-        logging.info(place)
+        # place = get_api_contents('donuts', current_lat, current_lng)
+        # logging.info(place)
         template = jinja_environment.get_template('templates/donuts.html')
-        self.response.write(template.render())
+        template_vars = get_api_contents('donuts', current_lat, current_lng)
+        self.response.write(template.render(template_vars))
 
 class DrinksHandler(webapp2.RequestHandler):
     def get(self):
         current_lat = get_current_latitude()
         current_lng = get_current_longitude()
-        place = get_api_contents('drinks', current_lat, current_lng)
-        logging.info(place)
+        # place = get_api_contents('drinks', current_lat, current_lng)
+        # logging.info(place)
         template = jinja_environment.get_template('templates/drinks.html')
-        self.response.write(template.render())
+        template_vars = get_api_contents('drinks', current_lat, current_lng)
+        self.response.write(template.render(template_vars))
 
 class ResultHandler(webapp2.RequestHandler):
     def get(self):
